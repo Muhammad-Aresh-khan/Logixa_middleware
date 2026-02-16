@@ -1,0 +1,27 @@
+--- Database Schema ---
+Table: admin
+  - admin_id: uuid
+  - adminname: character varying
+  - email: character varying
+  - password_hash: character varying
+  - created_at: timestamp without time zone
+Table: licenses
+  - license_key: character varying
+  - package_name: character varying
+  - issue_date: timestamp without time zone
+  - expiry_date: timestamp without time zone
+  - status: character varying
+Table: tenants
+  - tenant_id: uuid
+  - tenant_name: character varying
+  - license_key: character varying
+  - created_at: timestamp without time zone
+Table: users
+  - user_id: uuid
+  - username: character varying
+  - email: character varying
+  - password_hash: character varying
+  - tenant_id: uuid
+  - role: character varying
+  - created_at: timestamp without time zone
+--- End of Schema ---

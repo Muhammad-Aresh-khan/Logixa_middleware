@@ -1,0 +1,301 @@
+.container {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.header h1 {
+    color: #2563eb;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0 25px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.formGroup {
+    margin-bottom: 1.25rem;
+}
+
+.formGroup label {
+    display: block;
+    color: #334155;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+}
+
+.formGroup input,
+.formGroup select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: #f8fafc;
+    color: #1e293b;
+    font-weight: 400;
+}
+
+.formGroup input::placeholder {
+    color: #94a3b8;
+}
+
+.formGroup input:hover,
+.formGroup select:hover {
+    border-color: #cbd5e1;
+    background: white;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Select/Dropdown Styling */
+.selectInput {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: #f8fafc url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") no-repeat right 0.75rem center;
+    background-size: 1.5rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    color: #1e293b;
+    font-weight: 400;
+    padding-right: 2.5rem;
+}
+
+.selectInput:hover {
+    border-color: #cbd5e1;
+    background-color: white;
+}
+
+.selectInput:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.selectInput option {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+}
+
+.selectInput:disabled {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btnPrimary {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    margin-top: 0.75rem;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.25);
+}
+
+.btnPrimary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.35);
+}
+
+.btnPrimary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btnPrimary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.formFooter {
+    margin-top: 1.75rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.formFooter p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.formFooter a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.formFooter a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.message {
+    margin-top: 1.25rem;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message.success {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.message.error {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* Loading spinner for dropdown */
+.loadingText {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .card {
+        padding: 2rem;
+        border-radius: 16px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.75rem;
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .header h1 {
+        font-size: 1.75rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .card h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .formGroup input,
+    .formGroup select,
+    .selectInput {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .btnPrimary {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+}
