@@ -1,32 +1,32 @@
 {
     "version": 2,
-    "rewrites": [
+    "routes": [
         {
-            "source": "/create_account",
-            "destination": "http://34.170.38.36:5001/create_account"
+            "src": "/create_account",
+            "dest": "http://34.170.38.36:5001/create_account"
         },
         {
-            "source": "/login",
-            "destination": "http://34.170.38.36:5001/login"
+            "src": "/login",
+            "dest": "http://34.170.38.36:5001/login"
         },
         {
-            "source": "/get_license_details",
-            "destination": "http://34.170.38.36:5001/get_license_details"
+            "src": "/get_license_details",
+            "dest": "http://34.170.38.36:5001/get_license_details"
         },
         {
-            "source": "/map_user",
-            "destination": "http://34.170.38.36:5001/map_user"
+            "src": "/map_user",
+            "dest": "http://34.170.38.36:5001/map_user"
         },
         {
-            "source": "/get_available_licenses",
-            "destination": "http://34.170.38.36:5001/get_available_licenses"
+            "src": "/get_available_licenses",
+            "dest": "http://34.170.38.36:5001/get_available_licenses"
         },
         {
             "handle": "filesystem"
         },
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
