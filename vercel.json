@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/create_account",
+            "destination": "http://34.170.38.36:5001/create_account"
+        },
+        {
+            "source": "/login",
+            "destination": "http://34.170.38.36:5001/login"
+        },
+        {
+            "source": "/get_license_details",
+            "destination": "http://34.170.38.36:5001/get_license_details"
+        },
+        {
+            "source": "/map_user",
+            "destination": "http://34.170.38.36:5001/map_user"
+        },
+        {
+            "source": "/get_available_licenses",
+            "destination": "http://34.170.38.36:5001/get_available_licenses"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/frontend-react/$1"
+        }
+    ]
+}
