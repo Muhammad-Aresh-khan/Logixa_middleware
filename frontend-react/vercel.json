@@ -1,14 +1,5 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "frontend-react/package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "dist"
-            }
-        }
-    ],
     "rewrites": [
         {
             "source": "/create_account",
@@ -29,6 +20,9 @@
         {
             "source": "/get_available_licenses",
             "destination": "http://34.170.38.36:5001/get_available_licenses"
+        },
+        {
+            "handle": "filesystem"
         },
         {
             "source": "/(.*)",

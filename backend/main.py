@@ -8,7 +8,7 @@ from org_auth import create_account, login
 from map_users import check_license, map_user, get_available_licenses
 
 # ===== FastAPI App Setup =====
-app = FastAPI(title="AI-DB-INSIGHTS", description="Authentication and License Management API", version="1.0.0")
+app = FastAPI(title="Logixa Portal", description="Authentication and License Management", version="1.0.0")
 
 # ===== CORS Setup =====
 app.add_middleware(
@@ -23,7 +23,7 @@ app.add_middleware(
 async def root():
     return {
         "status": "online",
-        "message": "AI-DB-INSIGHTS API is running smoothly",
+        "message": "Logixa Portal API is running smoothly",
         "version": "1.0.0"
     }
 
